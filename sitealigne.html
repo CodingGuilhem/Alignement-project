@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang = "fr">
 <head> 
-    <meta chaset = "utf8" />
-    <title> Alignement de sequences </title>
+    <meta charset = "utf-8" />
+    <title> Alignement de séquences </title>
+    <style>
+        input[type="text"] 
+        {
+            width: 200px;
+        }
+    </style>
 </head>
 
 <body> 
-    <h1> Sequence 1</h1>
-    <h2> Selectionner la premiere sequence à comparer</h2>
-    <h1> Sequence 2</h1>
-    <h2> Selectionner la seconde sequence à comparer</h2>
+    <h1> Séquence 1</h1>
+    <form>
+        <label for="sequence1-file">Sélectionner le fichier pour la première séquence :</label>
+        <br/>
+        <input type="file" id="sequence1-file" name="sequence1-file">
+        <br/>
+        <label for="sequence1-text">Ou vous pouvez saisir directement la séquence ici :</label>
+        <br/>
+        <input type="text" id="sequence1-text" name="sequence1-text">
+    </form>
+
+    <h1> Séquence 2</h1>
+    <form>
+        <label for="sequence2-file">Sélectionner le fichier pour la deuxième séquence :</label>
+        <br/>
+        <input type="file" id="sequence2-file" name="sequence2-file">
+        <br/>
+        <label for="sequence2-text">Ou vous pouvez saisir directement la séquence ici :</label>
+        <br/>
+        <input type="text" id="sequence2-text" name="sequence2-text">
+    </form>
+
+    <h1> Options </h1>
+    
+    <br/><br/>
+    <input type="submit" name="alignement" id="alignement" value="Alignement">
 </body>
+</html>
