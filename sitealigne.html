@@ -3,16 +3,11 @@
 <head> 
     <meta charset = "utf-8" />
     <title> Alignement de séquences </title>
-    <style>
-        input[type="text"] 
-        {
-            width: 200px;
-        }
-    </style>
-</head>
+    <link rel ="stylesheet" type ="text/css" href ="alignement.css"
 
 <body> 
-    <h1> Séquence 1</h1>
+    <h1> Alignement de séquences </h1>
+    <h2> Séquence 1</h2>
     <form>
         <label for="sequence1-file">Sélectionner le fichier pour la première séquence :</label>
         <br/>
@@ -23,7 +18,7 @@
         <input type="text" id="sequence1-text" name="sequence1-text">
     </form>
 
-    <h1> Séquence 2</h1>
+    <h2> Séquence 2</h2>
     <form>
         <label for="sequence2-file">Sélectionner le fichier pour la deuxième séquence :</label>
         <br/>
@@ -34,8 +29,15 @@
         <input type="text" id="sequence2-text" name="sequence2-text">
     </form>
 
-    <h1> Options </h1>
-    
+    <h2> Options </h2>
+        <div>
+            <input type="checkbox" id ="fasta_out" name = "fasta_out">
+            <label for ="fasta_out"> I want to create a fasta with the aligned sequence</label>
+            <br/>
+            <input type="text" name = "penalite" id  = "penalite">
+            <label for = "penalite">Change the penality score</label>
+            <br/>
+        </div>
     <br/><br/>
     <input type="submit" name="alignement" id="alignement" value="Alignement">
 </body>
