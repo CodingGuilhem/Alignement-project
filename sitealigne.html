@@ -6,36 +6,41 @@
     <link rel ="stylesheet" type ="text/css" href ="alignement.css"
 
 <body> 
-    <h1> Alignement de séquences </h1>
-    <h2> Séquence 1</h2>
-    <form>
-        <label for="sequence1-file">Sélectionner le fichier pour la première séquence :</label>
+    <h1> Needleman and Wunsh alignment project </h1>
+    <h2> Sequence 1</h2>
+    <form class = "Sequences">
+        <label for="sequence1-file">Select the first fasta  :</label>
         <br/>
         <input type="file" id="sequence1-file" name="sequence1-file">
         <br/>
-        <label for="sequence1-text">Ou vous pouvez saisir directement la séquence ici :</label>
+        <label for="sequence1-text">Or you can directly input the sequence here  :</label>
         <br/>
         <input type="text" id="sequence1-text" name="sequence1-text">
     </form>
 
-    <h2> Séquence 2</h2>
-    <form>
-        <label for="sequence2-file">Sélectionner le fichier pour la deuxième séquence :</label>
+    <h2> Sequence 2</h2>
+    <form class = "Sequences">
+        <label for="sequence2-file">Select the first fasta :</label>
         <br/>
         <input type="file" id="sequence2-file" name="sequence2-file">
         <br/>
-        <label for="sequence2-text">Ou vous pouvez saisir directement la séquence ici :</label>
+        <label for="sequence2-text">Or you can directly input the sequence here :</label>
         <br/>
         <input type="text" id="sequence2-text" name="sequence2-text">
     </form>
 
     <h2> Options </h2>
-        <div>
+        <div class = "Option">
             <input type="checkbox" id ="fasta_out" name = "fasta_out">
             <label for ="fasta_out"> I want to create a fasta with the aligned sequence</label>
             <br/>
-            <input type="text" name = "penalite" id  = "penalite">
+            <br/>
+            <form>
             <label for = "penalite">Change the penality score</label>
+            <br/>
+            <input type="text" name = "penalite" id  = "penalite">
+            </form>
+
             <br/>
         </div>
     <br/><br/>

@@ -1,6 +1,27 @@
+body {
+    background-color: #696969 ;
+  }
 h1{
     font-size: 50pt;
 }
 h2{
     font-size: 20pt;
 }
+.Sequences {
+        border: 1px solid black; /* ajoute une bordure de 1 pixel noire */
+        background-color: lightgray; /* ajoute une couleur de fond gris clair */
+        padding: 10px; /* ajoute un espace de 10 pixels entre la bordure et le contenu */
+        border-bottom-right-radius: 10px;
+}    
+    
+.Option{
+        border: 1px solid black; /* ajoute une bordure de 1 pixel noire */
+        background-color: lightgray; /* ajoute une couleur de fond gris clair */
+        padding: 10px; /* ajoute un espace de 10 pixels entre la bordure et le contenu */
+}    
+
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+}
+
